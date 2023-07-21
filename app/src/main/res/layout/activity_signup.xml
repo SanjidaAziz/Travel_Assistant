@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ss"
+    android:orientation="vertical"
+    tools:context=".Signup"
+    android:gravity="center">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="15dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:text="Here's your First step with us!"
+                android:textAlignment="center"
+                android:textSize="20sp"
+
+                />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="110dp"
+
+                android:src="@drawable/singnup">
+
+            </ImageView>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:textColorHint="@color/black"
+                android:layout_marginTop="20dp"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="175dp"
+                tools:layout_editor_absoluteY="76dp"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+                <EditText
+                    android:id="@+id/fullName"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="Enter FullName "
+                    android:ems="10"
+                    android:drawableLeft="@drawable/user"
+                    android:drawablePadding="8dp"
+                    android:inputType="text"
+                    android:textSize="18sp"
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:textColorHint="@color/black"
+                android:layout_marginTop="20dp"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="175dp"
+                tools:layout_editor_absoluteY="76dp"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+
+
+                <EditText
+                    android:id="@+id/email"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="Your Email "
+                    android:ems="10"
+                    android:drawableLeft="@drawable/myemail"
+                    android:drawablePadding="8dp"
+                    android:inputType="text"
+                    android:textSize="18sp"
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:textColorHint="@color/black"
+                android:layout_marginTop="20dp"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="175dp"
+                tools:layout_editor_absoluteY="76dp"
+                app:passwordToggleEnabled="true"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+                <EditText
+                    android:id="@+id/passwordnum"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="Enter Password "
+                    android:ems="10"
+                    android:inputType="textPassword"
+
+
+                    android:textSize="18sp"
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:textColorHint="@color/black"
+                android:layout_marginTop="20dp"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="175dp"
+                tools:layout_editor_absoluteY="76dp"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox" >
+
+
+
+                <EditText
+                    android:id="@+id/age"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="Age "
+                    android:ems="10"
+                    android:drawableLeft="@drawable/urage"
+                    android:drawablePadding="8dp"
+                    android:inputType="text"
+                    android:textSize="18sp"
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+
+                <TextView
+                    android:id="@+id/gender"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Gender"
+                    android:layout_marginTop="20dp"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    />
+            <RadioGroup
+                android:id="@+id/person"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                android:gravity="center">
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Male"
+                    android:textSize="20sp"
+                    android:padding="10dp"
+                    />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Female"
+                    android:textSize="20sp"
+                    android:padding="10dp"/>
+            </RadioGroup>
+                <Button
+                    android:id="@+id/signup"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text="SIGN UP"
+                    android:textSize="20sp"
+                    android:background="@drawable/button_rounded"
+
+                    />
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

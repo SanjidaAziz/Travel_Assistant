@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/home_page"
+    android:orientation="vertical"
+    android:padding="30dp"
+    tools:context=".Profile">
+
+    <ImageView
+        android:id="@+id/profilePic"
+        android:layout_width="200dp"
+        android:layout_height="175dp"
+        android:layout_gravity="center"
+        android:background="@drawable/boy_">
+
+    </ImageView>
+
+    <TextView
+        android:id="@+id/emailAddressTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Email:"
+        android:drawableLeft="@drawable/myemail"
+        android:drawablePadding="6dp"
+        android:textStyle="bold"
+        android:textSize="22sp"
+        android:layout_marginTop="50dp"
+
+
+        />
+    <TextView
+        android:id="@+id/emailAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        />
+    <TextView
+        android:id="@+id/fullNameTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Full Name :"
+        android:drawableLeft="@drawable/user"
+        android:drawablePadding="6dp"
+        android:textStyle="bold"
+        android:textSize="22sp"
+        android:layout_marginTop="20dp"
+
+        />
+    <TextView
+        android:id="@+id/fullName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        />
+    <TextView
+        android:id="@+id/ageTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Age :"
+        android:drawableLeft="@drawable/urage"
+        android:drawablePadding="6dp"
+        android:textStyle="bold"
+        android:textSize="22sp"
+        android:layout_marginTop="20dp"
+
+        />
+    <TextView
+        android:id="@+id/age"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        />
+
+
+    <Button
+        android:id="@+id/signOut"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/button_rounded"
+        android:text="Logout"
+        android:textSize="20sp"/>
+
+    <Button
+        android:id="@+id/back"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/button_rounded"
+        android:text="Back"
+        android:textSize="20sp">
+
+
+    </Button>
+
+
+</LinearLayout>

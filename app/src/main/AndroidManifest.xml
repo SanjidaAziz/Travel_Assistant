@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.labproject.travelassistant">
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.TravelAssistant">
+        <activity android:name=".ContactUs"></activity>
+        <activity android:name=".AddSpot" />
+        <activity android:name=".AddShop" />
+        <activity android:name=".AddRestaurant" />
+        <activity android:name=".AddHotel" />
+        <activity android:name=".AdminDashboard" />
+        <activity android:name=".Profile" />
+        <activity android:name=".RecyclerviewMall" />
+        <activity android:name=".RecyclerviewSpot" />
+        <activity android:name=".RecyclerviewHtl" />
+        <activity android:name=".RecyclerviewRes" />
+        <activity android:name=".Signup" />
+        <activity android:name=".Emergency" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_map_key" />
+
+        <activity android:name=".NearbySearch" />
+        <activity android:name=".Login_form" />
+        <activity android:name=".UserDashboard" />
+        <activity android:name=".SplashScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

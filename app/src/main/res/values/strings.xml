@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">Travel Assistant</string>
+    <string name="search_text">Search Here...</string>
+    <string name="splash_screen_txt">Comfort your travel with TravelAssistant</string>
+
+
+    <string name="hotel">Hotel</string>
+    <string name="restaurant">Restaurant</string>
+    <string name="shop">Shopping Mall</string>
+    <string name="tourist_spot">Tourist Spot</string>
+
+    <!--menu string-->
+    <string name="menu_header_name">Travel
+        Assistant</string>
+    <string name="home">Home</string>
+    <string name="profile">Profile</string>
+    <string name="login">Login</string>
+    <string name="logout">Logout</string>
+    <string name="about">About Us</string>
+    <string name="nearbySearch">Search Nearby</string>
+    <string name="emmergency">Emmergency</string>
+    <string name="category">Category</string>
+    <string name="nav_open">Open</string>
+    <string name="nav_close">Close</string>
+
+    <!--nearby string-->
+    <string name="nearbySearchPlaces">Search Nearby Places</string>
+    <string name="google_map_key">AIzaSyD-egnTN15kL2P-Ly4PdHBdxeVtayvPWOc</string>
+
+
+</resources>
